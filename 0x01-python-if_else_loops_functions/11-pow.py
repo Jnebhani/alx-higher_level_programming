@@ -1,8 +1,8 @@
 #!/usr/bin/python3
-# 10-add.py
+# 11-pow.py
 # Brennan D Baraban <375@holbertonschool.com>
 
 
-def add(a, b):
-    """Return the addition of a and b."""
-    return (a + b)
+def pow(a, b):
+    """Return a to the power of b."""
+    return (a ** b)
