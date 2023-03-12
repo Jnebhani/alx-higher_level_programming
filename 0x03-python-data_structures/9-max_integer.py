@@ -1,7 +1,9 @@
 #!/usr/bin/python3
-def element_at(my_list, idx):
-    if idx < 0:
+def max_integer(my_list=[]):
+    if my_list is None or len(my_list) == 0:
         return None
-    if idx >= len(my_list):
-        return None
-    return my_list[idx]
+    largest = my_list[0]
+    for num in my_list:
+        if num > largest:
+            largest = num
+    return largest
