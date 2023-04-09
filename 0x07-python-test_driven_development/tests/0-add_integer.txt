@@ -1,4 +1,4 @@
-Test cases for '0-add_integer.py'
+est cases for '0-add_integer.py'
 =================================
 
 Adds two integers, with the function 'add_integer'

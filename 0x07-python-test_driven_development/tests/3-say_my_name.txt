@@ -21,25 +21,25 @@ Traceback (most recent call last):
 TypeError: first_name must be a string
 
 Case #3: test first argument being Null
->>> say_my_name(None, "Durden")
+>>> say_my_name(None, "Nebhani")
 Traceback (most recent call last):
 ...
 TypeError: first_name must be a string
 
 Case #4: test second argument being Null
->>> say_my_name("Tyler", None)
+>>> say_my_name("Jibril", None)
 Traceback (most recent call last):
 ...
 TypeError: last_name must be a string
 
 Case #5: test first argument being a number
->>> say_my_name(12, "Durden")
+>>> say_my_name(12, "Nebhani")
 Traceback (most recent call last):
 ...
 TypeError: first_name must be a string
 
 Case #6: test second argument being a number
->>> say_my_name("Tyler", 98)
+>>> say_my_name("Jibril", 98)
 Traceback (most recent call last):
 ...
 TypeError: last_name must be a string
@@ -51,5 +51,5 @@ Traceback (most recent call last):
 TypeError: first_name must be a string
 
 Case #8: test arguments being strings
->>> say_my_name("Tyler", "Durden")
-My name is Tyler Durden
+>>> say_my_name("Jibril", "Nebhani")
+My name is Jibril Nebhani

@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Describes a function to aidding two integers
+Describes a function to adding two integers
 """
 
 
