@@ -1,20 +1,21 @@
 #!/usr/bin/python3
+
 """
-7-add_item module
+BaseGeometry Module
 """
-import sys
-import json
-import os.path
-save_to_json_file = __import__('5-save_to_json_file').save_to_json_file
-load_from_json_file = __import__('6-load_from_json_file').load_from_json_file
 
-file = "add_item.json"
-json_list = []
 
-if os.path.exists(file):
-    json_list = load_from_json_file(file)
+class BaseGeometry():
+    """BaseGeometry class"""
 
-for i in range(1, len(sys.argv)):
-    json_list.append(sys.argv[i])
+    def area(self):
+        """Raises an Exception if it is not implemented"""
+        raise Exception("area() is not implemented")
 
-save_to_json_file(json_list, file)
+    def integer_validator(self, name, value):
+        """Value Validation"""
+        if type(value) != int:
+            raise TypeError(name + " must be an integer")
+        if value <= 0:
+            raise ValueError(name + " must be greater than 0")
+
