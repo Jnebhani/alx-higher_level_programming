@@ -20,8 +20,7 @@ class Rectangle(Base):
         self.height = height
         self.x = x
         self.y = y
-
-    @property
+        @property
     def width(self):
         '''
         Width getter
@@ -92,13 +91,11 @@ class Rectangle(Base):
         if value < 0:
             raise ValueError('y must be >= 0')
         self.__y = value
-
-    def area(self):
+        def area(self):
         '''
         Returns area
         '''
         return self.width * self.height
-
     def display(self):
         '''
         Prints Rectangle to
@@ -113,7 +110,7 @@ class Rectangle(Base):
                 print('#', end='')
             print()
 
-    def update(self, *args, **kwargs):
+            def update(self, *args, **kwargs):
         '''
         Allows for variadic args
         '''
@@ -157,3 +154,4 @@ class Rectangle(Base):
         '''
         return ('[Rectangle] ({}) {}/{} - {}/{}'.format(
             self.id, self.x, self.y, self.width, self.height))
+
